@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+  about
+{% endblock %}
+
+
+{% block body %}
+<!-- Testimonials Section
+================================================== -->
+<section id="testimonials">
+
+ <div class="row">
+   <div class="col-twelve">
+     <h2 class="h01">ABOUT US</h2>
+   </div>
+ </div>
+
+   <div class="row flex-container">
+
+      <div id="testimonial-slider" class="flexslider">
+
+         <ul class="slides">
+
+            <li>
+             <div class="testimonial-author">
+                   <img src="{% static "images/avatars/avatar-1.jpg" %}" alt="Author image">
+                   <div class="author-info">
+                     Mandeep
+                     <span class="position">CEO</span>
+                   </div>
+               </div>
+
+               <p>
+               Your work is going to fill a large part of your life, and the only way to be truly satisfied is
+               to do what you believe is great work. And the only way to do great work is to love what you do.
+               If you haven't found it yet, keep looking. Don't settle. As with all matters of the heart, you'll know when you find it.
+               </p>
+           </li> <!-- /slide -->
+
+            <li>
+
+             <div class="testimonial-author">
+                   <img src="{% static "images/avatars/sj.jpg" %}" alt="Author image">
+                   <div class="author-info">
+                     Sorav
+                     <span>CEO</span>
+                   </div>
+               </div>
+
+               <p>
+               You are better off trying something and having it not work and learning from that than not doing anything at all.
+               </p>
+
+            </li> <!-- /slide -->
+
+         </ul> <!-- /slides -->
+
+      </div> <!-- /testimonial-slider -->
+
+   </div> <!-- /flex-container -->
+
+</section> <!-- /testimonials -->
+{% endblock %}
