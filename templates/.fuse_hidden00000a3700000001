@@ -62,7 +62,7 @@
 	            <div class="service-content">
 
                   <img src="{% static "Icons/006-book-1.png" %}" height = "150" width = "140" alt="10ths">
-	            	 <h3 style="color:black;">After 10th</h3>
+	            	 <h3 style="color:#47efe7;">After 10th</h3>
 
 		            <p>
 	         	    </p>
@@ -76,7 +76,7 @@
 					  <img src="{% static "Icons/099-notebook-1.png" %}" height = "150" width = "140" alt="10ths">
 
 	            <div class="service-content">
-	            	<h3 style="color:black;">ARTS/HUMANITIES</h3>
+	            	<h3 class="h05">ARTS/HUMANITIES</h3>
 
 		            <p>
 	         		</p>
@@ -91,7 +91,7 @@
 			   	  <img src="{% static "Icons/025-pay.png" %}" height = "150" width = "140" alt="10ths">
 
 	            <div class="service-content">
-	            	<h3 style="color:black;">COMMERCE</h3>
+	            	<h3 class="h05">COMMERCE</h3>
 
 		            <p>
 	        			</p>
@@ -106,7 +106,7 @@
 					  <img src="{% static "Icons/005-doctor-2.png" %}" height = "150" width = "140" alt="10ths">
 
 	            <div class="service-content">
-	            	<h3 style="color:black;">MEDICAL</h3>
+	            	<h3 class="h05">MEDICAL</h3>
 
 		            <p>
 	         		</p>
@@ -121,7 +121,7 @@
 			   	  <img src="{% static "Icons/088-science.png" %}" height = "150" width = "140" alt="10ths">
 
 	            <div class="service-content">
-	            	<h3 style="color:black;">NON-MEDICAL</h3>
+	            	<h3 class="h05">NON-MEDICAL</h3>
 
 		            <p>
 	        			</p>
@@ -136,7 +136,7 @@
 			    <img src="{% static "Icons/007-student-3.png" %}" height = "150" width = "140" alt="10ths">
 
 	            <div class="service-content">
-	            	 <h3 style="color:black;">AFTER GRADUATION</h3>
+	            	 <h3 class="h05">AFTER GRADUATION</h3>
 
 		            <p>
 	        			</p>
@@ -148,10 +148,10 @@
 
          <div class="bgrid feature">
 
- 					  <img src="{% static "Icons/010-teacher-1.png" %}" height = "150" width = "140" alt="10ths">
+ 					  <img src="{% static "Icons/005-doctor-2.png" %}" height = "150" width = "140" alt="10ths">
 
  	            <div class="service-content">
- 	            	<h3 style="color:black;">Post Graduation</h3>
+ 	            	<h3 class="h05">MEDICAL</h3>
 
  		            <p>
  	         		</p>
@@ -163,10 +163,10 @@
 
  			   <div class="bgrid feature">
 
- 			   	  <img src="{% static "Icons/074-scientist.png" %}" height = "150" width = "140" alt="10ths">
+ 			   	  <img src="{% static "Icons/088-science.png" %}" height = "150" width = "140" alt="10ths">
 
  	            <div class="service-content">
- 	            	<h3 style="color:black;">Phd</h3>
+ 	            	<h3 class="h05">NON-MEDICAL</h3>
 
  		            <p>
  	        			</p>
@@ -178,10 +178,10 @@
 
  			   <div class="bgrid feature">
 
- 			    <img src="{% static "Icons/104-briefcase.png" %}" height = "150" width = "140" alt="10ths">
+ 			    <img src="{% static "Icons/007-student-3.png" %}" height = "150" width = "140" alt="10ths">
 
  	            <div class="service-content">
- 	            	 <h3 style="color:black;">Jobs</h3>
+ 	            	 <h3 class="h05">AFTER GRADUATION</h3>
 
  		            <p>
  	        			</p>
@@ -204,7 +204,7 @@
       <div class="col-twelve with-bottom-line">
 
         <h5>Process</h5>
-        <h1 style="color:#47efe7;">Features</h1>
+        <h1>Features</h1>
 
 
 
@@ -380,44 +380,6 @@
 
 
 </div>
-</div> <!-- /bgrid -->
-<div class="bgrid feature">
-
-    <img src="{% static "Icons/025-pay.png" %}" height = "150" width = "140" alt="10ths">
-
-      <div class="service-content">
-        <h3 class="h05">Unique Carrier Option</h3>
-
-
-        <p>Be Diffrent from world</p>
-        <p>
-        </p>
-
-
-      </div>
-
- </div> <!-- /bgrid -->
-
-<div class="bgrid feature">
-
-    <img src="{% static "Icons/005-doctor-2.png" %}" height = "150" width = "140" alt="10ths">
-
-      <div class="service-content">
-        <h3 class="h05">Study Abroad</h3>
-
-
-        <p>Here is a proper guide for studing abroad </p>
-
-        <p>
-      </p>
-
-
-      </div>
-
-</div> <!-- /bgrid -->
-
-
-
 
 
  {% endcomment %}
