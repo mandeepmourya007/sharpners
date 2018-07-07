@@ -36,7 +36,7 @@
    ================================================== -->
    <header>
 
-   	<div class="row">
+   	<div class="row" >
 
    		<div class="logo">
 	         <a href="{% url "home" %}">Sharpeners</a>
@@ -46,15 +46,19 @@
 				<ul class="main-navigation">
 					<li class="current"><a   href="{% url "home" %}" title="">Home</a></li>
 
-<div class="dropdown">
-          <li><a class="dropbtn"  href="#process" title="">Menu</a></li>
 
- <div class="dropdown-content">
-   <a href="#">after 10th</a>
-   <a href="#">after 12th</a>
-   <a href="#">jobs</a>
- </div>
-</div>
+  <div class="dropdown">
+          <!-- <li><a class="dropbtn"  href="#process" title="">Menu</a></li> -->
+
+
+           <button onclick="myFunction()"  class="dropbtn">MENU</button>
+           <div id="myDropdown" class="dropdown-content">
+             <a href="#">Link 1</a>
+             <a href="#">Link 2</a>
+             <a href="#">Link 3</a>
+           </div>
+         </div>
+
 					{% comment %} <li><a class="smoothscroll"  href="#features" title="">Features</a></li> {% endcomment %}
 
 					<li><a   href="{% url "faq" %}" title="">FAQ</a></li>
