@@ -4,6 +4,7 @@ from . forms import postForm
 from .models import posts
 
 def post(request,title):
+<<<<<<< HEAD
 	post=posts.objects.all()
 	return render(request,"posts/post.html",{ "title":title, "post":post } )
 def add_post(request):
@@ -27,4 +28,8 @@ def add_post(request):
 
 		
 
+=======
+    return render(request,"posts/post.html",{"title":title})
+def add_post(request):
+>>>>>>> c7acea81d494c5462857d49108e43b53e7412ac7
 	return render(request,"posts/add_post.html")
