@@ -5,8 +5,16 @@
 
 
 {% block body %}
-<h3 style="color:#47efe7" >{{ title }}</h1>
-	
 
-<p  style="color:white" >hihjghjgjgjjghjghjghjghjj</p><br>
+<br><br><br><br><br>
+<div  class="row features-content" >  
+<h3 style="color:#47efe7" >{{ title }}</h1>
+{%  for p in post %}
+	<p style="color:#47efe7">{{ p.title }}</p><br>
+	<p style="color:#47efe7">{{ p.text|linebreaksbr }}</p><br>
+
+{%   endfor %}
+	
+</div>
+<p  style="color:white" >yoyo</p><br>
 {% endblock %}

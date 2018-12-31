@@ -9,22 +9,22 @@
 <!--===============================================================================================-->
 
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/bootstrap/css/bootstrap.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/bootstrap/css/bootstrap.min.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/fonts/font-awesome-4.7.0/css/font-awesome.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/fonts/font-awesome-4.7.0/css/font-awesome.min.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/animate/animate.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/animate/animate.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/css-hamburgers/hamburgers.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/css-hamburgers/hamburgers.min.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/animsition/css/animsition.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/animsition/css/animsition.min.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/select2/select2.min.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/select2/select2.min.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/vendor/daterangepicker/daterangepicker.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/vendor/daterangepicker/daterangepicker.css" %}">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="{% static "post/css/util.css" %}">
-	<link rel="stylesheet" type="text/css" href="{% static "post/css/main.css"  %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/css/util.css" %}">
+	<link rel="stylesheet" type="text/css" href="{% static "posts/css/main.css"  %}">
 <!--===============================================================================================-->
 {% endblock %}
 
@@ -32,11 +32,17 @@
 {% block body %}
 
 
+<br>
+<br>
+<br>
+<br>
+<br>
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
+			<form class="contact100-form validate-form" method='POST'>
+				{% csrf_token %}
 				<span class="contact100-form-title">
-					Say Hello!
+					 Hello! MANDEEP
 				</span>
 
 				<div class="wrap-input100 validate-input" data-validate="Name is required">
@@ -45,17 +51,17 @@
 					<span class="focus-input100"></span>
 				</div>
 
-				<div class="wrap-input100 validate-input" >
+				<!-- <div class="wrap-input100 validate-input" >
 					<span class="label-input100">Url</span>
 					<input class="input100" type="text" name="slug" placeholder="autofill">
 					<span class="focus-input100"></span>
-				</div>
+				</div> -->
 
 				<div class="wrap-input100 input100-select">
-					<span class="label-input100">Catogrie</span>
+					<span class="label-input100">tag</span>
 					<div>
-						<select class="selection-2" name="catagire">
-							<option>Choose catagire</option>
+						<select class="selection-2" name="tag">
+							<option>Choose tag</option>
 							<option>after 10th</option>
 							<option>after 12th</option>
 							<option>graduation</option>
@@ -80,7 +86,7 @@
 
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
 					<span class="label-input100">Content</span>
-					<textarea class="input100" name="message" placeholder="type here here..."></textarea>
+					<textarea class="input100" name="text" placeholder="type here here..."></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
@@ -103,15 +109,17 @@
 
 	<div id="dropDownSelect1"></div>
 
+	</form>
+
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/jquery/jquery-3.2.1.min.js" %}"></script>
+	<script src="{% static "posts/vendor/jquery/jquery-3.2.1.min.js" %}"></script>
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/animsition/js/animsition.min.js" %}"></script>
+	<script src="{% static "posts/vendor/animsition/js/animsition.min.js" %}"></script>
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/bootstrap/js/popper.js" %}"></script>
-	<script src="{% static "post/vendor/bootstrap/js/bootstrap.min.js" %}"></script>
+	<script src="{% static "posts/vendor/bootstrap/js/popper.js" %}"></script>
+	<script src="{% static "posts/vendor/bootstrap/js/bootstrap.min.js" %}"></script>
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/select2/select2.min.js" %}"></script>
+	<script src="{% static "posts/vendor/select2/select2.min.js" %}"></script>
 	<script>
 		$(".selection-2").select2({
 			minimumResultsForSearch: 20,
@@ -119,21 +127,15 @@
 		});
 	</script>
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/daterangepicker/moment.min.js" %}"></script>
-	<script src="{% static "post/vendor/daterangepicker/daterangepicker.js" %}"></script>
+	<script src="{% static "posts/vendor/daterangepicker/moment.min.js" %}"></script>
+	<script src="{% static "posts/vendor/daterangepicker/daterangepicker.js" %}"></script>
 <!--===============================================================================================-->
-	<script src="{% static "post/vendor/countdowntime/countdowntime.js" %}"></script>
+	<script src="{% static "posts/vendor/countdowntime/countdowntime.js" %}"></script>
 <!--===============================================================================================-->
-	<script src="{% static "post/js/main.js"></script>
+	<script src="{% static "posts/js/main.js" %}"></script>
+	<script src="{% static "posts/js/slug.js" %}"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-23581568-13');
-</script>
+
 
 {% endblock %}
